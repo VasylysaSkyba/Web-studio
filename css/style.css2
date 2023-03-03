@@ -1,4 +1,3 @@
-
 :root {
   --primary-font: "Roboto", sans-serif;
   --secondary-font: "Raleway", sans-serif;
@@ -55,14 +54,14 @@ img {
 
 * {
   box-sizing: border-box;
-} 
-            
+}
+
 /*======================= HEADER =======================*/
 .section {
   padding-top: 120px;
-  
+  /* padding-bottom: 120px;*/
 }
-*/
+
 .header {
   padding-top: 24px;
   padding-bottom: 24px;
@@ -128,7 +127,7 @@ img {
   background-color: var(--accent-color);
   border-radius: 2px;
   position: absolute;
-  
+  /*left: 0;*/
   bottom: -28px;
   pointer-events: none;
 }
@@ -176,58 +175,6 @@ img {
 .contact-list {
   display: flex;
   align-items: center;
-}
-
-@media screen and (max-width: 768px) {
-.header-list {
-  display: none;
-}
-
-.contact-list {
-  display: none;
-}
-}
-
-.mobile-menu-open {
-  width: 32px;
-  height: 22px;
-  background-color: transparent;
-  border: none;
-  padding: 0;
-  line-height: 0;
-}
-@media screen and (min-width: 480px) {
-  .mobile-menu-open {
-    display: none;
-  }
-}
-
-.header-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.mobile-menu {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  z-index: 1000;
-  top: 0;
-  left: 0;
-  padding-top: 24px;
-  padding-bottom: 24px;
-  background: #FFFFFF;
-box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
-
-}
-.mobile-menu_close-btn {
-}
-/*======================= CONTAINER ==========================*/
-.container {
-  padding-left: 15px;
-  padding-right: 15px;
-  
 }
 
 /*======================= HERO =======================*/
@@ -457,7 +404,7 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
 
 /*======================= CUSTOMERS ====================*/
 .customers {
-  padding-bottom: 96px;
+  padding-bottom: 120px;
 }
 
 .customers-title {
@@ -475,11 +422,10 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
 .company-list {
   display: flex;
   gap: 24px;
-  flex-wrap: wrap;
 }
 
 .company-item {
-  width: calc((100% - 30px) / 2);
+  width: calc((100% - 120px) / 6);
   height: 88px;
 }
 
@@ -759,7 +705,15 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
 .card-item:hover .cover-text-wrap {
   transform: translateY(0);
 }
+/*======================= CONTAINER ==========================*/
+.container {
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
 
+  margin-left: auto;
+  margin-right: auto;
+}
 
 /*================ backdrop, modal ======================= */
 .backdrop {
@@ -981,41 +935,4 @@ color: rgba(117, 117, 117, 0.5);
 .submit-btn:hover,
 .submit-btn:focus {
   background-color: var(--accent-color);
-}
-
-/*============= @medai =============*/
-
-@media screen and (min-width: 480px) {
-  .container {
-    width: 100%;
-    max-width: 426px;
-    margin-left: auto;
-  margin-right: auto;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 766px;
-  }
-  .company-item {
-    width: calc((100% - 60px) / 3);
-    height: 88px;
-  }
-  }
-
-
-@media screen and (min-width: 1200px) {
-  .container {
-    max-width: 1158px;
-    
-  }
-
-  .customers {
-    padding-bottom: 120px;
-  }
-  .company-item {
-    width: calc((100% - 120px) / 6);
-    height: 88px;
-  }
 }
