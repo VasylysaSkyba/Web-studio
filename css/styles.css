@@ -48,7 +48,7 @@ ol {
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -60,7 +60,7 @@ img {
 .section {
   padding-top: 120px;
 }
-*/ .header {
+.header {
   padding-top: 24px;
   padding-bottom: 24px;
   border-bottom: 1px solid #e7e9fc;
@@ -175,16 +175,6 @@ img {
   align-items: center;
 }
 
-@media screen and (max-width: 768px) {
-  .header-list {
-    display: none;
-  }
-
-  .contact-list {
-    display: none;
-  }
-}
-
 .mobile-menu-open {
   width: 32px;
   height: 22px;
@@ -193,11 +183,7 @@ img {
   padding: 0;
   line-height: 0;
 }
-@media screen and (min-width: 480px) {
-  .mobile-menu-open {
-    display: none;
-  }
-}
+
 
 .header-container {
   display: flex;
@@ -225,26 +211,7 @@ img {
   padding-left: 15px;
   padding-right: 15px;
 }
-@media screen and (min-width: 480px) {
-  .container {
-    width: 100%;
-    max-width: 426px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
 
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 766px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .container {
-    max-width: 1158px;
-  }
-}
 /*======================= HERO =======================*/
 .hero {
   text-align: center;
@@ -309,10 +276,15 @@ img {
 }
 
 /*======================= FEATURE =======================*/
-
 .feature-title,
 .filter-title {
   display: none;
+}
+
+.feature-list {
+  display: flex;
+flex-direction: column;
+align-items: center;
 }
 
 .feature-subtitle {
@@ -332,80 +304,8 @@ img {
   margin-bottom: 72px;
 }
 
-@media screen and (min-width: 480px) {
-}
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .feature-list {
-    display: flex;
 
-    gap: 24px;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    padding: 0;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .feature-list {
-    display: flex;
-    width: 264px;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 24px;
-  }
-
-  .feature-subtitle {
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: var(--primary-text-color);
-    margin-bottom: 8px;
-    width: 264px;
-  }
-
-  .feature-text {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--secondary-text-color);
-    width: 264px;
-  }
-
-  .feature-item::before {
-    display: block;
-    content: "";
-    height: 112px;
-    background-size: 64px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: var(--background-color);
-    margin-bottom: 8px;
-  }
-
-  .icon-antenna:before {
-    background-image: url(../images/antenna.svg);
-  }
-  .icon-vector:before {
-    background-image: url(../images/Vector.svg);
-  }
-  .icon-diagram:before {
-    background-image: url(../images/diagram.svg);
-  }
-  .icon-astronaut:before {
-    background-image: url(../images/astronaut.svg);
-  }
-}
-
-/*@media screen and (max-width: 1200px) {
-  .feature-item::before {
-    display: none;
-  }
-}*/
 /*======================= WORK =======================*/
 .works {
   padding-bottom: 120px;
@@ -428,7 +328,17 @@ img {
 
 .team {
   background-color: var(--background-color);
-  padding-bottom: 120px;
+  /*padding-bottom: 120px;*/
+  padding-bottom: 84px;
+}
+
+.team-item {
+  width: 100%;
+  border-radius: 0px 0px 4px 4px;
+  background-color: #ffffff;
+  margin-right: 24px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .team-title {
@@ -441,9 +351,12 @@ img {
   margin-bottom: 72px;
 }
 
-.team-list {
-  display: flex;
-}
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
 .team-name {
   font-weight: 500;
   font-size: 20px;
@@ -463,13 +376,6 @@ img {
   margin-bottom: 8px;
 }
 
-.team-item {
-  border-radius: 0px 0px 4px 4px;
-  background-color: #ffffff;
-  margin-right: 24px;
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}
 .team-wrap {
   padding-top: 32px;
   padding-bottom: 32px;
@@ -559,22 +465,7 @@ img {
   fill: var(--accent-color);
 }
 
-@media screen and (min-width: 768px) {
-  .company-item {
-    width: calc((100% - 60px) / 3);
-    height: 88px;
-  }
-}
 
-@media screen and (min-width: 1200px) {
-  .customers {
-    padding-bottom: 120px;
-  }
-  .company-item {
-    width: calc((100% - 120px) / 6);
-    height: 88px;
-  }
-}
 /*======================= FOOTER =======================*/
 .footer {
   padding-top: 100px;
