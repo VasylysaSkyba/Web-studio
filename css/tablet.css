@@ -186,6 +186,31 @@
   margin-top: 72px;
 }
 
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-f {
+  display: flex;
+    flex-wrap: wrap;
+    /*text-align: center;
+    justify-content: space-around;*/
+    align-items: baseline;
+    margin-left: 108px;
+}
+.footer-footer {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-wrap {
+  margin-right: 24px;
+}
+.online-input {
+  width: 264px;
+}
+.footer-btn {
+  margin-left: 24px;
+}
+}
+
 @media screen and (max-width: 1199px) {
   .works {
     display: none;
