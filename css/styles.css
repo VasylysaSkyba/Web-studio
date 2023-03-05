@@ -19,7 +19,7 @@ ol {
 }
 
 .no-scroll {
-overflow: hidden;
+  overflow: hidden;
 }
 .link {
   text-decoration: none;
@@ -90,13 +90,6 @@ img {
 .logotype-part-header {
   color: #2e2f42;
 }
-/*.header-list {
-  display: none;
-}
-
-.contact-list {
-  display: none;
-}*/
 
 .mobile-menu-open {
   width: 32px;
@@ -171,9 +164,9 @@ img {
   text-transform: capitalize;
   color: #2e2f42;
 }
-  .mob-menu-link:hover,
-  .mob-menu-link:focus {
-    color: var(--accent-color);
+.mob-menu-link:hover,
+.mob-menu-link:focus {
+  color: var(--accent-color);
 }
 .mob-menu-tel {
   font-weight: 700;
@@ -192,12 +185,10 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #434455;
-
 }
 
 .mob-menu-email:not(:last-child) {
   margin-bottom: 40px;
-
 }
 .mob-soc-list {
   display: flex;
@@ -517,34 +508,14 @@ img {
   display: flex;
   margin-bottom: 72px;
 }
-/*.footer-f {
+.footer-f {
   display: flex;
-}*/
+}
 
 .logotype-part-footer {
   color: #f4f4fd;
 }
 
-/*.logotype-footer {
-  display: flex;
-  font-family: "Raleway", sans-serif;
-  color: #4d5ae5;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 21px;
-  /*align-items: center;
-  justify-content: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  justify-content: center;
-}*/
-
-.footer-wrap-soc {
-  /*margin-left: 120px;*/
-}
-/*.footer-wrap {
-  justify-content: center;
-}*/
 .footer-soc-list {
   display: flex;
   gap: 16px;
@@ -566,12 +537,10 @@ img {
   background: rgba(255, 255, 255, 0.1);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
- 
 }
 .footer-soc-icon {
   fill: #f4f4fd;
 }
-
 
 .footer-soc-link:is(:hover, :focus) {
   background-color: #31d0aa;
@@ -585,19 +554,10 @@ img {
   letter-spacing: 0.02em;
   color: #ffffff;
   text-align: center;
-  /*justify-content: center;*/
 
   margin-bottom: 16px;
 }
 
-.footer-form-wrap {
-  /*margin-left: 80px;*/
- 
-
-}
-.footer-field {
- 
-}
 .online-input {
   font-size: 12px;
   line-height: 2;
@@ -623,18 +583,6 @@ img {
   padding-top: 8px;
 }
 
-/*.online-lable-text {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #ffffff;
-  display: flex;
-  justify-content: center;
-margin-top: 72px;
- 
-}*/
-
 .footer-btn {
   display: inline-flex;
   align-items: center;
@@ -650,12 +598,7 @@ margin-top: 72px;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
   margin-top: 16px;
- 
-
-  
-  
 }
-
 
 .footer-btn-icon {
   margin-left: 16px;
