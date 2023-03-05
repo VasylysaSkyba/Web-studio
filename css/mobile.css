@@ -1,13 +1,17 @@
 @media screen and (min-width: 480px) {
-  /*
     .container {
-    width: 426px;
-    margin-left: auto;
+   max-width: 426px;
+  }
+    /*margin-left: auto;
     margin-right: auto;
-  }
-*/
-  .mobile-menu-open {
+  }*/
+
+
+.hero-title{
+font-size: 36px;
+}
+  /*.mobile-menu-open {
     display: none;
-  }
+  }*/
   
 }

@@ -71,11 +71,6 @@ img {
   align-items: center;
 }
 
-.navigation {
-  display: flex;
-  align-items: center;
-}
-
 .logotype {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -92,87 +87,12 @@ img {
 .logotype-part-header {
   color: #2e2f42;
 }
-
 .header-list {
-  display: flex;
-  align-items: center;
-}
-
-.header-item:not(:last-child) {
-  margin-right: 40px;
-}
-
-.header-link {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--primary-text-color);
-  position: relative;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.cover {
-  color: var(--accent-color);
-}
-
-.cover::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 4px;
-  background-color: var(--accent-color);
-  border-radius: 2px;
-  position: absolute;
-
-  bottom: -28px;
-  pointer-events: none;
-}
-
-.header-link:hover,
-.header-link:focus {
-  color: var(--accent-color);
-}
-
-.address {
-  margin-left: auto;
-}
-
-.email {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--secondary-text-color);
-  font-style: normal;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.email:hover,
-.email:focus {
-  color: var(--accent-color);
-}
-
-.tel {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--secondary-text-color);
-  font-style: normal;
-  margin-left: 40px;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.tel:hover,
-.tel:focus {
-  color: var(--accent-color);
+  display: none;
 }
 
 .contact-list {
-  display: flex;
-  align-items: center;
+  display: none;
 }
 
 .mobile-menu-open {
@@ -184,27 +104,98 @@ img {
   line-height: 0;
 }
 
-
 .header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
-.mobile-menu {
+/*=================== mob menu ==================*/
+.mob-menu {
   position: fixed;
+  z-index: 1;
+  top: 0;
   width: 100%;
   height: 100%;
-  z-index: 1000;
-  top: 0;
-  left: 0;
-  padding-top: 24px;
-  padding-bottom: 24px;
   background: #ffffff;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
-.mobile-menu_close-btn {
+
+.mob-menu > .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  /*justify-content: space-between;*/
+}
+
+.mob-menu-list {
+  margin-bottom: 200px;
+}
+.menu-close {
+  display: block;
+  margin-left: auto;
+  margin-bottom: 32px;
+}
+.mob-menu-item:not(:last-child) {
+  margin-bottom: 40px;
+}
+.mob-menu-link {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #2e2f42;
+}
+.mob-menu-tel {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #4d5ae5;
+  margin-bottom: 40px;
+  display: block;
+}
+
+.mob-menu-email {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #434455;
+  margin-bottom: 40px;
+}
+.mob-soc-list {
+  display: flex;
+  justify-content: start;
+  gap: 54px;
+}
+
+.mob-soc-item {
+  width: 40px;
+  height: 40px;
+}
+
+.mob-soc-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4d5ae5;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mob-soc-icon {
+  fill: #f4f4fd;
+}
+
+.mob-soc-link:is(:hover, :focus) {
+  background-color: var(--accent-color);
 }
 /*======================= CONTAINER ==========================*/
 .container {
@@ -216,10 +207,10 @@ img {
 /*======================= HERO =======================*/
 .hero {
   text-align: center;
-  padding-top: 188px;
-  padding-bottom: 188px;
-  min-width: 1440px;
-  height: 600px;
+  padding-top: 112px;
+  padding-bottom: 112px;
+  min-width: 428px;
+  height: 432px;
   margin-left: auto;
   margin-right: auto;
   background: rgba(46, 47, 66, 0.7);
@@ -227,19 +218,33 @@ img {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/office.jpg);
+    url(../images/office-mobile.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/office-mobile@2x.jpg);
+  }
+}
+
 .hero-titel {
-  font-size: 56px;
-  line-height: 1.07;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
   text-align: center;
   letter-spacing: 0.02em;
+  text-transform: capitalize;
   color: var(--white-color);
-  max-width: 500px;
+  max-width: 320px;
   justify-content: center;
   margin-right: auto;
 }
@@ -284,8 +289,8 @@ img {
 
 .feature-list {
   display: flex;
-flex-direction: column;
-align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .feature-subtitle {
@@ -304,8 +309,6 @@ align-items: center;
   letter-spacing: 0.02em;
   margin-bottom: 72px;
 }
-
-
 
 /*======================= WORK =======================*/
 .works {
@@ -337,7 +340,6 @@ align-items: center;
   width: 100%;
   border-radius: 0px 0px 4px 4px;
   background-color: #ffffff;
-  margin-right: 24px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
@@ -352,11 +354,12 @@ align-items: center;
   margin-bottom: 72px;
 }
 
-  .team-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 24px;
-  }
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  row-gap: 72px;
+}
 
 .team-name {
   font-weight: 500;
@@ -465,7 +468,6 @@ align-items: center;
 .company-link:is(:hover, :focus) .company-icon {
   fill: var(--accent-color);
 }
-
 
 /*======================= FOOTER =======================*/
 .footer {
