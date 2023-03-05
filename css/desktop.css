@@ -13,11 +13,11 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
-  
+
   .cover {
     color: var(--accent-color);
   }
-  
+
   .cover::after {
     content: "";
     display: block;
@@ -26,20 +26,20 @@
     background-color: var(--accent-color);
     border-radius: 2px;
     position: absolute;
-  
+
     bottom: -28px;
     pointer-events: none;
   }
-  
+
   .header-link:hover,
   .header-link:focus {
     color: var(--accent-color);
   }
-  
+
   .address {
     margin-left: auto;
   }
-  
+
   .email {
     font-size: 16px;
     line-height: 1.5;
@@ -49,12 +49,12 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
-  
+
   .email:hover,
   .email:focus {
     color: var(--accent-color);
   }
-  
+
   .tel {
     font-size: 16px;
     line-height: 1.5;
@@ -65,12 +65,12 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
-  
+
   .tel:hover,
   .tel:focus {
     color: var(--accent-color);
   }
-  
+
   .contact-list {
     display: flex;
     align-items: center;
@@ -80,149 +80,163 @@
     align-items: center;
   }
 
-.hero {
-  text-align: center;
-  padding-top: 188px;
-  padding-bottom: 188px;
-  min-width: 1440px;
-  height: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  background: rgba(46, 47, 66, 0.7);
-  background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url(../images/office.jpg2);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
   .hero {
+    text-align: center;
+    padding-top: 188px;
+    padding-bottom: 188px;
+    min-width: 1440px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(46, 47, 66, 0.7);
     background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url(../images/office@2x.jpg);
-  }
-
-
-.hero-titel {
-  font-size: 56px;
-  line-height: 1.07;
-  text-align: center;
-  letter-spacing: 0.02em;
-  color: var(--white-color);
-  max-width: 500px;
-  justify-content: center;
-  margin-right: auto;
-}
-
-
-
-
-
-
-
-
-
-.mobile-menu-open {
-  display: none;
-}
-  .team > .container {
-    min-width: 1158px;
-  }
-
-  .team-item {
-    width: calc((100% - 72px) / 4);
-    margin: 0;
-  }
-
-  .feature-title,
-  .filter-title {
-    display: none;
-  }
-
-  .feature-list {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 24px;
-  }
-
-  .feature-subtitle {
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: var(--primary-text-color);
-    margin-bottom: 8px;
-    width: 264px;
-  }
-
-  .feature-text {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--secondary-text-color);
-    width: 264px;
-  }
-
-  .feature-item::before {
-    display: block;
-    content: "";
-    height: 112px;
-    background-size: 64px;
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/office.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-color: var(--background-color);
-    margin-bottom: 8px;
+    background-size: cover;
   }
 
-  .icon-antenna:before {
-    background-image: url(../images/antenna.svg);
-  }
-  .icon-vector:before {
-    background-image: url(../images/Vector.svg);
-  }
-  .icon-diagram:before {
-    background-image: url(../images/diagram.svg);
-  }
-  .icon-astronaut:before {
-    background-image: url(../images/astronaut.svg);
-  }
-  .customers {
-    padding-bottom: 120px;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/office@2x.jpg);
+    }
+
+    .hero-titel {
+      font-size: 56px;
+      line-height: 1.07;
+      text-align: center;
+      letter-spacing: 0.02em;
+      color: var(--white-color);
+      max-width: 500px;
+      justify-content: center;
+      margin-right: auto;
+    }
+
+    .mobile-menu-open {
+      display: none;
+    }
+    .mob-menu {
+      display: none;
+    }
+    .menu-close-btn {
+      display: none;
+    }
+
+    .team > .container {
+      min-width: 1158px;
+    }
+
+    .team-item {
+      width: calc((100% - 72px) / 4);
+      margin: 0;
+    }
+
+    .feature-title,
+    .filter-title {
+      display: none;
+    }
+
+    .feature-list {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      padding: 0px;
+      gap: 24px;
+    }
+
+    .feature-subtitle {
+      font-family: "Roboto", sans-serif;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 1.2;
+      letter-spacing: 0.02em;
+      color: var(--primary-text-color);
+      margin-bottom: 8px;
+      width: 264px;
+    }
+
+    .feature-text {
+      font-family: "Roboto", sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.5;
+      letter-spacing: 0.02em;
+      color: var(--secondary-text-color);
+      width: 264px;
+    }
+
+    .feature-item::before {
+      display: block;
+      content: "";
+      height: 112px;
+      background-size: 64px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: var(--background-color);
+      margin-bottom: 8px;
+    }
+
+    .icon-antenna:before {
+      background-image: url(../images/antenna.svg);
+    }
+    .icon-vector:before {
+      background-image: url(../images/Vector.svg);
+    }
+    .icon-diagram:before {
+      background-image: url(../images/diagram.svg);
+    }
+    .icon-astronaut:before {
+      background-image: url(../images/astronaut.svg);
+    }
+    .customers {
+      padding-bottom: 120px;
+    }
+
+    .company-list {
+      display: flex;
+      gap: 24px;
+    }
+    .works {
+      padding-bottom: 120px;
+    }
+    .works-title {
+      font-size: 36px;
+      line-height: 1.11;
+      letter-spacing: 0.02em;
+      text-transform: capitalize;
+      color: var(--primary-text-color);
+      text-align: center;
+      margin-bottom: 72px;
+    }
+    .works-list {
+      display: flex;
+      gap: 24px;
+    }
+    
+    .company-item {
+      width: calc((100% - 120px) / 6);
+      height: 88px;
+    }
   }
 
-  .company-list {
+  .company-link {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
     display: flex;
-    gap: 24px;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
-
-  .company-item {
-    width: calc((100% - 120px) / 6);
-    height: 88px;
-  }
-}
-
-.company-link {
-  width: 100%;
-  height: 100%;
-  border: 1px solid #8e8f99;
-  border-radius: 4px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 }

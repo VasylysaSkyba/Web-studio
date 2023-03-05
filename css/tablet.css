@@ -1,13 +1,24 @@
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) /*and (min-width: 1199px)*/ {
   .container {
     max-width: 766px;
   }
 
+  .mobile-menu-open {
+    display: none;
+  }
+  .mob-menu {
+  display: none;
+  }
   .header-list {
     display: flex;
     align-items: center;
   }
   
+.email,
+.tel {
+  justify-content: start;
+}
+
   .header-item:not(:last-child) {
     margin-right: 40px;
   }
@@ -70,7 +81,6 @@
     letter-spacing: 0.02em;
     color: var(--secondary-text-color);
     font-style: normal;
-    margin-left: 40px;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -80,19 +90,10 @@
     color: var(--accent-color);
   }
   
-  .contact-list {
-    display: flex;
-    align-items: center;
-  }
   .navigation {
     display: flex;
     align-items: center;
   }
-
-  .mobile-menu-open {
-    display: none;
-  }
-
 
 
 .hero {
@@ -166,18 +167,63 @@ height: 436px;
     width: calc((100% - 60px) / 3);
     height: 88px;
   }
+  
+  
 
-  .header-list {
-    display: none;
-  }
-
-  .contact-list {
-    display: none;
-  }
 }
 
-/*@media screen and (max-width: 768px) {
-.feature-item::before {
-    display: none;
-  }
+.logotype-footer {
+  /*display: flex;*/
+  font-family: "Raleway", sans-serif;
+  color: #4d5ae5;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  /*align-items: center;
+  justify-content: center;*/
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  justify-content: center;
+}
+.online-lable-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  justify-content: center;
+margin-top: 72px;
+ 
+}
+/*.footer-f {
+  display: flex;
 }*/
+.footer-wrap {
+ margin-right: 24px;
+}
+
+/*.footer-btn {
+  margin-left: 24px;
+}*/
+
+/*.footer-f {
+  margin-right: 108px;
+}*/
+.footer-text-soc {
+ 
+}
+
+/*@media screen and (min-width: 480px) and (max-width: 1199px) {
+.ffff {
+  display: flex;
+}*/
+
+
+@media screen and (max-width: 1199px) {
+  .works {
+    display: none;
+}
+}
+.footer-form-wrap {
+  
+}

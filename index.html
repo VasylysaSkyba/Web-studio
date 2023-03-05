@@ -48,16 +48,17 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css" re
           </li>
         </ul>
       </address>
-      <button type="button" class="mobile-menu-open">
+      <button class="mobile-menu-open" data-menu-open type="button">
         <svg class="mobile-menu-open_icon" width="32" height="22">
           <use href="./images/icons.svg#burger"></use>
         </svg>
       </button>
       </div>
-<div class="mob-menu">
+<div class="mob-menu is-hidden" data-menu>
   <div class="container">
-  <button class="menu-close" type="button">
-    <svg class="menu-close-btn" width="24" height="24">
+    <div>
+  <button class="menu-close" data-menu-close type="button">
+    <svg class="menu-close-btn" width="12" height="12">
       <use href="./images/icons.svg#close-modal">
       </use>
     </svg>
@@ -73,7 +74,9 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css" re
       <a class="mob-menu-link link" href="">Contacts</a>
     </li>
   </ul>
+    </div>
 
+    <div>
   <a class="mob-menu-tel" href="tel:+110001111111">+11 (000) 111-11-11</a>
   <a class="mob-menu-email" href="mailto:info@devstudio.com">info@devstudio.com</a>
   
@@ -107,6 +110,7 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css" re
       </a>
     </li>
   </ul>
+    </div>
   </div>
 </div>
     </header>
@@ -158,7 +162,7 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css" re
       </section>
 
       <!--WORK-->
-      <!--<section class="works section">
+      <section class="works section">
         <div class="container">
         <h2 class="works-title">What are we doing</h2>
 
@@ -192,7 +196,7 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css" re
           </li>
         </ul>
         </div>
-      </section>-->
+      </section>
 
       <!--TEAM-->
       <section class="team section">
@@ -433,8 +437,9 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css" re
     </main>
 
     <!--FOOTER-->
-    <!--<footer class="footer">
+    <footer class="footer">
       <div class="container footer-f">
+        <div class="ffff">
         <div class="footer-wrap">
       <a class="logotype-footer" href="./index.html">Web<span class="logotype-part-footer">Studio</span></a>
       <p class="footer-text">
@@ -473,6 +478,7 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css" re
               </li>
             </ul>
          </div>
+      </div>
            <div class="footer-form-wrap">
           <form class="footer-form">
             <div class="footer-field">
@@ -490,9 +496,9 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css" re
           </form>
           </div>
       </div>
-      </footer>-->
+      </footer>
 
-     <!-- <div class="backdrop is-hidden" data-modal>
+     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
           <button type="button" class="modal-close" data-modal-close>
             <svg class="close-modal" width="12" height="12">
@@ -549,7 +555,7 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css" re
         </div>
       </div>
       <script src="./js/modal.js"></script>
-      <script src="./js/menu.js"></script>-->
+      <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
 
