@@ -166,6 +166,12 @@
   }
 }
 
+
+.section {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
 .logotype-footer {
   font-family: "Raleway", sans-serif;
   color: #4d5ae5;
@@ -208,6 +214,9 @@
 }
 .footer-btn {
   margin-left: 24px;
+}
+.footer-text {
+  margin-bottom: 72px;
 }
 }
 
