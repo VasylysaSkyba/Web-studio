@@ -1,19 +1,26 @@
 @media screen and (min-width: 480px) {
   .container {
-    max-width: 426px;
+   /* max-width: 428px;*/
   }
 
   .team > .container {
     max-width: 268px;
   }
+ 
+  }
   .hero-title {
     font-size: 36px;
   }
-}
+
+
 
 @media screen and (max-width: 767px) {
   .header-list {
     display: none;
+  }
+  .header-container {
+    margin-right: 0;
+    margin-left: 0;
   }
 
   .contact-list {

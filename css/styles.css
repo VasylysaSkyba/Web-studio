@@ -69,10 +69,6 @@ img {
   border-bottom: 1px solid #e7e9fc;
 }
 
-.header-container {
-  display: flex;
-  align-items: center;
-}
 
 .logotype {
   font-family: "Raleway", sans-serif;
@@ -92,12 +88,13 @@ img {
 }
 
 .mobile-menu-open {
-  width: 32px;
-  height: 22px;
+ /* width: 32px;
+  height: 22px;*/
   background-color: transparent;
   border: none;
   padding: 0;
   line-height: 0;
+  cursor: pointer;
 }
 
 .header-container {
@@ -121,7 +118,7 @@ img {
 
 .mob-menu > .container {
   height: 100%;
-  display: flex;
+ /* display: flex;*/
   flex-direction: column;
   justify-content: space-between;
   overflow-y: auto;
@@ -193,7 +190,7 @@ img {
 .mob-soc-list {
   display: flex;
   justify-content: start;
-  gap: 54px;
+ gap: 54px;
 }
 
 .mob-soc-item {
