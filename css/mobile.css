@@ -3,6 +3,9 @@
     max-width: 426px;
   }
 
+  .team > .container {
+    max-width: 268px;
+  }
   .hero-title {
     font-size: 36px;
   }
@@ -18,6 +21,9 @@
   }
   .works {
     display: none;
+  }
+  .feature-list {
+    padding-top: 96px;
   }
 }
 

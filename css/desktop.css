@@ -134,7 +134,15 @@
     .team > .container {
       min-width: 1158px;
     }
-
+    .customers > .container {
+      min-width: 1158px;
+    }
+    .footer > .container {
+      min-width: 1158px;
+    }
+    .feature > .container {
+      min-width: 1158px;
+    }
     .team-item {
       width: calc((100% - 72px) / 4);
       margin: 0;
@@ -151,11 +159,13 @@
       align-items: flex-start;
       padding: 0px;
       gap: 24px;
-      padding-top: 100px;
+     
+      /*padding-top: 100px;*/
       
     }
     .feature {
-    
+    padding-top: 0px; 
+
     padding-bottom: 0;
     }
     .feature-subtitle {

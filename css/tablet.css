@@ -2,7 +2,17 @@
   .container {
     max-width: 766px;
   }
+  .team > .container {
+    max-width: 558px;
+  }
 
+  .footer > .container {
+    max-width: 558px;
+  }
+
+.customers > .container {
+  max-width: 558px;
+}
   .mobile-menu-open {
     display: none;
   }
@@ -61,9 +71,9 @@
   }
 
   .email {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+    font-size: 12px;
+    line-height: 1.4;
+    letter-spacing: 0.04em;
     color: var(--secondary-text-color);
     font-style: normal;
     transition-duration: 250ms;
@@ -76,9 +86,9 @@
   }
 
   .tel {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+    font-size: 12px;
+    line-height: 1.4;
+    letter-spacing: 0.04em;
     color: var(--secondary-text-color);
     font-style: normal;
     transition-duration: 250ms;
@@ -94,6 +104,9 @@
     display: flex;
     align-items: center;
   }
+
+
+  
 
   .hero {
     text-align: center;
@@ -137,9 +150,9 @@
     margin-right: auto;
   }
 
-  .team > .container {
+  /*.team > .container {
     min-width: 558px;
-  }
+  }*/
 
   .team-item {
     width: calc((100% - 24px) / 2);
@@ -159,6 +172,14 @@
   .feature-item {
     width: calc((100% - 24px) / 2);
   }
+.feature-subtitle {
+  display: flex;
+  align-items: flex-start;
+}
+.feature-section {
+  padding-bottom: 0;
+  padding-top: 96px;
+}
 
   .company-item {
     width: calc((100% - 60px) / 3);
@@ -218,6 +239,8 @@
 .footer-text {
   margin-bottom: 72px;
 }
+
+
 }
 
 @media screen and (max-width: 1199px) {
