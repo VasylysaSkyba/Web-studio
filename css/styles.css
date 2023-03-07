@@ -114,6 +114,7 @@ img {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
   padding-top: 24px;
   padding-bottom: 24px;
+  overflow-y: auto;
 }
 
 .mob-menu > .container {
@@ -121,7 +122,7 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  overflow-y: auto;
+ /* overflow-y: auto;*/
   margin: auto;
 }
 
@@ -186,9 +187,7 @@ display: block;
   margin-bottom: 40px;
 }
 
-/*.mob-menu-email:not(:last-child) {
-  margin-bottom: 40px;
-}*/
+
 .mob-soc-list {
   display: flex;
   justify-content: start;
@@ -198,6 +197,7 @@ display: block;
 .mob-soc-item {
   width: 40px;
   height: 40px;
+  margin-top: 48px;
 }
 
 .mob-soc-link {
@@ -210,7 +210,6 @@ display: block;
   background-color: #4d5ae5;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  margin-top: 48px;
 }
 .mob-soc-icon {
   fill: #f4f4fd;
