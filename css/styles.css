@@ -88,11 +88,13 @@ img {
   color: #2e2f42;
 }
 
-.header-container {
+.header-wrap {
   display: flex;
   justify-content: space-between;
+  text-align: center;
   align-items: center;
 }
+
 /*=================== mob menu ==================*/
 .mob-menu {
   display: flex;
@@ -498,14 +500,15 @@ img {
   display: flex;
 }
 .footer-text {
+  flex-direction: column;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #e7e9fc;
   max-width: 264px;
   margin-top: 16px;
-  display: flex;
-  /* margin-bottom: 72px;*/
+ 
+  
 }
 
 .logotype-part-footer {
@@ -855,7 +858,7 @@ img {
   line-height: 1.33;
   color: #8e8f99;
 
-  /* display: inline-block;*/
+  
 }
 
 .modal-fiaeld {

@@ -14,10 +14,7 @@
   .header-list {
     display: none;
   }
-  .header-container {
-    margin-right: 0;
-    margin-left: 0;
-  }
+  
 
   .contact-list {
     display: none;
@@ -32,9 +29,7 @@
 .customers-title {
   padding-top: 96px;
 }
-/*.footer-btn {
-  display: flex;
-}*/
+
 
 @media screen and (max-width: 767px) {
   .footer-f {
@@ -72,11 +67,9 @@
     justify-content: center;
   }
 
-  .footer-wrap {
-    justify-content: center;
-  }
 
   .footer-text {
     margin-bottom: 72px;
+  
   }
 }

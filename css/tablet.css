@@ -1,4 +1,4 @@
-@media screen and (min-width: 768px) /*and (min-width: 1199px)*/ {
+@media screen and (min-width: 768px) /*and (min-width: 1199px) */ {
   .container {
     max-width: 766px;
   }
@@ -109,7 +109,7 @@
     text-align: center;
     padding-top: 112px;
     padding-bottom: 112px;
-   min-width: 768px;
+    min-width: 768px;
     height: 436px;
     margin-left: auto;
     margin-right: auto;
@@ -179,57 +179,44 @@
     height: 88px;
   }
 
+  .section {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
 
-.section {
-  padding-top: 96px;
-  padding-bottom: 96px;
-}
+  .logotype-footer {
+    font-family: "Raleway", sans-serif;
+    color: #4d5ae5;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    justify-content: center;
+  }
 
-.logotype-footer {
-  font-family: "Raleway", sans-serif;
-  color: #4d5ae5;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 21px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  justify-content: center;
-}
-
-
-
-
-
-
-
-.subscribe {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #ffffff;
-  justify-content: center;
- /* margin-top: 72px;*/
-}
-
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .footer-f {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-    
+  .subscribe {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    justify-content: center;
     
   }
- /* .footer-form {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
 
-  }*/
-  
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    .footer-f {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+    }
+    .footer-text {
+      margin-bottom: 72px;
+    }
+    
   }
-.footer-footer {
+  .footer-footer {
     display: flex;
     justify-content: space-between;
   }
@@ -242,18 +229,14 @@
   .footer-btn {
     margin-left: 24px;
   }
-  .footer-text {
-    margin-bottom: 72px;
-  }
+
   .footer-btn {
     display: inline-flex;
   }
 
-
-@media screen and (max-width: 1199px) {
-  .works {
-    display: none;
-  } 
-  
-}
+  @media screen and (max-width: 1199px) {
+    .works {
+      display: none;
+    }
+  }
 }
