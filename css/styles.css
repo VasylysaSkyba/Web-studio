@@ -67,6 +67,8 @@ img {
   padding-top: 24px;
   padding-bottom: 24px;
   border-bottom: 1px solid #e7e9fc;
+ /*padding-left: 15px;
+ padding-right: 15px;*/
 }
 
 .logotype {
@@ -80,21 +82,14 @@ img {
   text-transform: uppercase;
   color: #4d5ae5;
   margin-right: 76px;
+  
 }
 
 .logotype-part-header {
   color: #2e2f42;
 }
 
-.mobile-menu-open {
-  /* width: 32px;
-  height: 22px;*/
-  background-color: transparent;
-  border: none;
-  padding: 0;
-  line-height: 0;
-  cursor: pointer;
-}
+
 
 .header-container {
   display: flex;
@@ -218,6 +213,17 @@ display: block;
 .mob-soc-link:is(:hover, :focus) {
   background-color: var(--accent-color);
 }
+
+
+.mobile-menu-open {
+  background-color: transparent;
+    border: none;
+    padding: 0;
+    line-height: 0;
+    cursor: pointer;
+    
+}
+
 /*======================= CONTAINER ==========================*/
 .container {
   padding-left: 15px;
@@ -230,7 +236,7 @@ display: block;
   text-align: center;
   padding-top: 112px;
   padding-bottom: 112px;
-  min-width: 428px;
+  /*min-width: 428px;*/
   height: 432px;
   margin-left: auto;
   margin-right: auto;
@@ -584,7 +590,7 @@ display: block;
 }
 
 .footer-btn {
-  display: inline-flex;
+ /* display: flex;*/
   align-items: center;
   text-align: center;
   height: 40px;
@@ -593,7 +599,7 @@ display: block;
   border-radius: 4px;
   color: #ffffff;
   border: none;
-  margin-left: 131px;
+ /* margin-left: 131px;*/
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;

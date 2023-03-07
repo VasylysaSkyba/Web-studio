@@ -1,17 +1,22 @@
 @media screen and (min-width: 480px) {
   .container {
-    /* max-width: 428px;*/
+    max-width: 428px;
   }
 
-  .team > .container {
-    max-width: 268px;
-  }
+  
 }
 .hero-title {
   font-size: 36px;
 }
-
+.online-input {
+ 
+  width: 100%;
+}
 @media screen and (max-width: 767px) {
+  
+  .team > .container {
+    max-width: 268px;
+  }
   .header-list {
     display: none;
   }
@@ -32,6 +37,9 @@
 }
 .customers-title {
   padding-top: 96px;
+}
+.footer-btn {
+  display: flex;
 }
 
 @media screen and (max-width: 767px) {
@@ -70,6 +78,7 @@
   .footer-text-soc {
     justify-content: center;
   }
+  
 
   .footer-wrap {
     justify-content: center;

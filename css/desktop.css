@@ -109,7 +109,7 @@
         ),
         url(../images/office@2x.jpg);
     }
-
+  }
     .hero-titel {
       font-size: 56px;
       line-height: 1.07;
@@ -284,7 +284,7 @@
     }
 
     .footer-wrap-soc {
-      margin-left: 120px;
+      margin-left: 100px;
     }
 
     .footer-soc-list {
@@ -389,6 +389,8 @@
     }
     .footer-footer {
       display: flex;
+      
     }
+    
   }
-}
+
