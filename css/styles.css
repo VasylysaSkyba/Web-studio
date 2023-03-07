@@ -69,7 +69,6 @@ img {
   border-bottom: 1px solid #e7e9fc;
 }
 
-
 .logotype {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -88,7 +87,7 @@ img {
 }
 
 .mobile-menu-open {
- /* width: 32px;
+  /* width: 32px;
   height: 22px;*/
   background-color: transparent;
   border: none;
@@ -118,14 +117,14 @@ img {
 
 .mob-menu > .container {
   height: 100%;
- /* display: flex;*/
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   overflow-y: auto;
 }
 
 .mob-menu-list {
-  margin-bottom: 24px;
+  margin-bottom: 64px;
 }
 .menu-close {
   display: block;
@@ -182,15 +181,16 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #434455;
-}
-
-.mob-menu-email:not(:last-child) {
   margin-bottom: 40px;
 }
+
+/*.mob-menu-email:not(:last-child) {
+  margin-bottom: 40px;
+}*/
 .mob-soc-list {
   display: flex;
   justify-content: start;
- gap: 54px;
+  gap: 54px;
 }
 
 .mob-soc-item {
@@ -219,7 +219,7 @@ img {
 }
 /*======================= CONTAINER ==========================*/
 .container {
- padding-left: 15px;
+  padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
 }
@@ -378,7 +378,6 @@ img {
   flex-wrap: wrap;
   gap: 24px;
   row-gap: 72px;
-
 }
 
 .team-name {
@@ -409,8 +408,6 @@ img {
   display: flex;
   justify-content: center;
   gap: 24px;
-  
- 
 }
 .team-soc-list:not(:last-child) {
   gap: 24px;
@@ -496,7 +493,7 @@ img {
 /*======================= FOOTER =======================*/
 
 .footer {
- /* padding-top: 100px;
+  /* padding-top: 100px;
   padding-bottom: 100px;*/
   background-color: var(--primary-text-color);
 }
@@ -508,7 +505,7 @@ img {
   max-width: 264px;
   margin-top: 16px;
   display: flex;
- /* margin-bottom: 72px;*/
+  /* margin-bottom: 72px;*/
 }
 .footer-f {
   display: flex;
