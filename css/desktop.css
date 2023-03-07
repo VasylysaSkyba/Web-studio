@@ -216,6 +216,10 @@
     }
     .customers {
       padding-bottom: 120px;
+      padding-top: 120px;
+    }
+    .customers-title {
+      padding-top: 0;
     }
 
     .company-list {
