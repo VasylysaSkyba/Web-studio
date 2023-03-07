@@ -2,18 +2,12 @@
   .container {
     max-width: 428px;
   }
-
-  
 }
 .hero-title {
   font-size: 36px;
 }
-.online-input {
- 
-  width: 100%;
-}
+
 @media screen and (max-width: 767px) {
-  
   .team > .container {
     max-width: 268px;
   }
@@ -38,16 +32,15 @@
 .customers-title {
   padding-top: 96px;
 }
-.footer-btn {
+/*.footer-btn {
   display: flex;
-}
+}*/
 
 @media screen and (max-width: 767px) {
   .footer-f {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    text-align: center;
   }
+
   .section {
     padding-top: 96px;
     padding-bottom: 96px;
@@ -65,7 +58,7 @@
     justify-content: center;
   }
 
-  .online-lable-text {
+  .subscribe {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -78,7 +71,6 @@
   .footer-text-soc {
     justify-content: center;
   }
-  
 
   .footer-wrap {
     justify-content: center;

@@ -563,7 +563,8 @@ img {
   padding-top: 8px;
 }
 
-.online-lable-text {
+.subscribe {
+  
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
