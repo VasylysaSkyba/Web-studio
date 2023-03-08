@@ -9,7 +9,7 @@
 
 @media screen and (max-width: 767px) {
   .team > .container {
-    max-width: 268px;
+    max-width: 294px;
   }
   .header-list {
     display: none;
